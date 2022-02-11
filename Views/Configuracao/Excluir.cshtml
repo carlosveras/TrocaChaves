@@ -1,0 +1,141 @@
+﻿@model TrocaChaves.Models.Configuracoes
+
+@{
+    ViewBag.Title = "Excluir";
+    var sistema = ViewBag.Sistema;
+}
+
+<h2></h2>
+
+<style>
+    .panel > .panel-heading {
+        background-image: none;
+        background-color: #d9534f;
+        color: white;
+    }
+
+    .panel-default > .panel-heading-on {
+        background-image: none;
+        background-color: #04a12b;
+        color: #ffffff;
+    }
+
+    .panel-default > .panel-heading-off {
+        background-image: none;
+        background-color: #d9534f;
+        color: #ffffff;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        
+        <div class="form-horizontal">
+            <br />
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Excluir</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="col-sm-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ServidorId, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.ServidorId, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.ServidorId, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-2">
+                                        @Html.LabelFor(model => model.ServerPath, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.ServerPath, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.ServerPath, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading panel-heading-on">
+                                <h3 class="panel-title">Captcha Ligado</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(model => model.BillingPciExecuteOn, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.BillingPciExecuteOn, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.BillingPciExecuteOn, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(model => model.BillingPciSecurityOn, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.BillingPciSecurityOn, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.BillingPciSecurityOn, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading panel-heading-off">
+                                <h3 class="panel-title">Captcha Desligado</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(model => model.BillingPciExecuteOff, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.BillingPciExecuteOff, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.BillingPciExecuteOff, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(model => model.BillingPciSecurityOff, htmlAttributes: new { @class = "control-label" })
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.BillingPciSecurityOff, new { attributes = new { disabled = "disabled", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.BillingPciSecurityOff, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="submit" value="Excluir" class="btn btn-danger" />
+
+                        @if (sistema == "SPW")
+                        {
+                            <a href="@Url.Action("IndexSpw", "Configuracao")" class="btn btn-default">Voltar</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Index", "Configuracao")" class="btn btn-default">Voltar</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

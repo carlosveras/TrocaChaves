@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Servers>
+  <Server>
+    <ServidorId>SPW</ServidorId>
+    <ServidorSystemId>SPW</ServidorSystemId>
+    <ServerPath>C:\Servidores\DEVS1</ServerPath>
+    <BillingPath>\ICareCustomerBillingUI</BillingPath>
+    <BillingPciExecuteOn>SPW-ON</BillingPciExecuteOn>
+    <BillingPciExecuteOff>SPW-OFF1</BillingPciExecuteOff>
+    <BillingPciSecurityOn>SPW-ON</BillingPciSecurityOn>
+    <BillingPciSecurityOff>SPW-OFF1</BillingPciSecurityOff>
+    <InteractionPath>\ICareCustomerInteractionUI</InteractionPath>
+    <InteractionPciExecuteOn>SPW-ON</InteractionPciExecuteOn>
+    <InteractionPciExecuteOff>SPW-OFF1</InteractionPciExecuteOff>
+    <InteractionPciSecurityOn>SPW-ON</InteractionPciSecurityOn>
+    <InteractionPciSecurityOff>SPW-OFF1</InteractionPciSecurityOff>
+    <OrderPath>\ICareOrderManagementUI</OrderPath>
+    <OrderPciExecuteOn>SPW-ON</OrderPciExecuteOn>
+    <OrderPciExecuteOff>SPW-OFF1</OrderPciExecuteOff>
+    <OrderPciSecurityOn>SPW-ON</OrderPciSecurityOn>
+    <OrderPciSecurityOff>SPW-OFF1</OrderPciSecurityOff>
+    <SimpleProposalPath>\SimpleProposal</SimpleProposalPath>
+    <SimpleProposalPciExecuteOn>SPW-ON</SimpleProposalPciExecuteOn>
+    <SimpleProposalPciExecuteOff>SPW-OFF1</SimpleProposalPciExecuteOff>
+    <SimpleProposalPciJSPathOn>SPW-ON</SimpleProposalPciJSPathOn>
+    <SimpleProposalPciJSPathOff>SPW-OFF1</SimpleProposalPciJSPathOff>
+    <StatusCaptcha>1</StatusCaptcha>
+  </Server>
+  <Server>
+    <ServidorId>DV1</ServidorId>
+    <ServidorSystemId>ICARE</ServidorSystemId>
+    <ServerPath>C:\Servidores\DEV1</ServerPath>
+    <BillingPath>\ICareCustomerBillingUI</BillingPath>
+    <BillingPciExecuteOn>DV1-ON</BillingPciExecuteOn>
+    <BillingPciExecuteOff>DV1-OFF</BillingPciExecuteOff>
+    <BillingPciSecurityOn>DV1-ON</BillingPciSecurityOn>
+    <BillingPciSecurityOff>DV1-OFF</BillingPciSecurityOff>
+    <InteractionPath>\ICareCustomerInteractionUI</InteractionPath>
+    <InteractionPciExecuteOn>DV1-ON</InteractionPciExecuteOn>
+    <InteractionPciExecuteOff>DV1-OFF</InteractionPciExecuteOff>
+    <InteractionPciSecurityOn>DV1-ON</InteractionPciSecurityOn>
+    <InteractionPciSecurityOff>DV1-OFF</InteractionPciSecurityOff>
+    <OrderPath>\ICareOrderManagementUI</OrderPath>
+    <OrderPciExecuteOn>DV1-ON</OrderPciExecuteOn>
+    <OrderPciExecuteOff>DV1-OFF</OrderPciExecuteOff>
+    <OrderPciSecurityOn>DV1-ON</OrderPciSecurityOn>
+    <OrderPciSecurityOff>DV1-OFF</OrderPciSecurityOff>
+    <SimpleProposalPath />
+    <SimpleProposalPciExecuteOn>DV1-ON</SimpleProposalPciExecuteOn>
+    <SimpleProposalPciExecuteOff>DV1-OFF</SimpleProposalPciExecuteOff>
+    <SimpleProposalPciJSPathOn>DV1-ON</SimpleProposalPciJSPathOn>
+    <SimpleProposalPciJSPathOff>DV1-OFF</SimpleProposalPciJSPathOff>
+    <StatusCaptcha>1</StatusCaptcha>
+  </Server>
+</Servers>

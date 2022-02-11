@@ -1,0 +1,94 @@
+﻿@model TrocaChaves.Models.Configuracoes
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="conteudo">
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        var selectedServer;
+        $("#btnHabilita").attr('disabled', 'disabled');
+        $("#btnDesabilita").attr('disabled', 'disabled');
+
+        $(".dropdown-menu li a").click(function () {
+            var selText = $(this).text();
+            selectedServer = selText;
+            $("#definicoes").load(encodeURI('@(Url.Action("ConfiguracoesAtuais","Home",null, Request.Url.Scheme))?servidorId=' + selText.toString()));
+            $("#btnHabilita").removeAttr('disabled');
+            $("#btnDesabilita").removeAttr('disabled');
+        });
+
+        $("#btnHabilita").click(function (){
+            $("#definicoes").load(encodeURI('@(Url.Action("LigaCaptcha","Home",null, Request.Url.Scheme))?servidorId=' + selectedServer));
+        });
+
+        $("#btnDesabilita").click(function (){
+            $("#definicoes").load(encodeURI('@(Url.Action("DesligaCaptcha","Home",null, Request.Url.Scheme))?servidorId=' + selectedServer));
+        });
+    });
+
+    </script>
+
+    <br />
+
+    <table class="table-bordered">
+        <tr>
+            <td id="servidores" class="dropdown">
+                <button id="btnServidor" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Servidores Icare...
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (var item in Model.ListServersIcare)
+                    {
+                        <li>
+                            <a href="#" tabindex="-1" data-value="@item.Value">@item.Text</a>
+                        </li>
+                    }
+                </ul>
+            </td>
+
+            <td id="servidoresSpw" class="dropdown">
+                <button id="btnServidorSpw" class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+                    Servidores Spw...
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (var itemSpw in Model.ListServersSPW)
+                    {
+                        <li>
+                            <a href="#" tabindex="-1" data-value="@itemSpw.Value">@itemSpw.Text</a>
+                        </li>
+                    }
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <div id="definicoes">
+        @{
+            Html.RenderPartial("ConfiguracoesAtuais", Model);
+        }
+    </div>
+
+    <table class="table-bordered">
+        <tr>
+            @Html.HiddenFor(x => x.Luin, new { Luin = HttpContext.Current.Request.LogonUserIdentity.Name })
+
+            @Html.HiddenFor(x => x.IsAuth, new { IsAuth = HttpContext.Current.Request.IsAuthenticated })
+
+            @Html.HiddenFor(x => x.IName, new { IName = HttpContext.Current.User.Identity.Name })
+
+            @Html.HiddenFor(x => x.Uhadd, new { Uhadd = HttpContext.Current.Request.UserHostAddress })
+
+            <td><input type="submit" value="Habilitar SkyTefGA" class="btn btn-success" id="btnHabilita" /></td>
+            <td><input type="submit" value="Desabilitar SkyTefGA" class="btn btn-danger" id="btnDesabilita" /></td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<TrocaChaves.Models.Configuracoes>
+
+@{
+    ViewBag.Title = "Configurações SPW";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            placement: 'top'
+        });
+    });
+</script>
+
+<h2></h2>
+<p>
+    <a href="@Url.Action("Adicionar", "Configuracao", new { sistema = "SPW" }, null)" class="btn btn-default">Novo Servidor</a>
+</p>
+
+<table class="table table-hover table-condensed">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServidorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusCaptcha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SimpleProposalPath)
+        </th>
+        <th></th>
+    </tr>
+
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServidorId)
+                </td>
+                <td>
+                    @if (item.StatusCaptcha == 0)
+                    {
+                        <span class="glyphicon glyphicon-off" style="color:red" data-toggle="tooltip" title="desligado"></span>
+                    }
+                    else
+                    {
+                        <span class="glyphicon glyphicon-off" style="color:green" data-toggle="tooltip" title="ligado"></span>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SimpleProposalPath)
+                </td>
+                <td>
+                    <a href="@Url.Action("Alterar", "Configuracao", new { ServidorId = item.ServidorId, sistema = "SPW" })" class="btn btn-default btn-xs" data-toggle="tooltip" title="Alterar">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                    <span>  |  </span>
+
+                    <a href="@Url.Action("Detalhes", "Configuracao", new { ServidorId = item.ServidorId, sistema = "SPW" })" class="btn btn-default btn-xs" data-toggle="tooltip" title="Detalhes">
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                    </a>
+                    <span>  |  </span>
+
+                    <a href="@Url.Action("Excluir", "Configuracao", new { ServidorId = item.ServidorId, sistema = "SPW" })" class="btn btn-default btn-xs" data-toggle="tooltip" title="Excluir">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </a>
+                </td>
+            </tr>
+
+        }
+    }
+</table>

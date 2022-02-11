@@ -1,0 +1,61 @@
+﻿@model TrocaChaves.Models.Configuracoes
+
+@*<style>
+    .jumbotron {
+        color: #FFFAFA;
+        background-color: #8B4513;
+    }
+</style>*@
+
+<div class="jumbotron" id="configuracoesAtuais">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Configuração Atual</th>
+                <th scope="col">@Model.ServidorId</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.ServidorSystemId == "ICARE" && Model.ServidorSystemId != null)
+            {
+
+                <tr>
+                    <th scope="row">Billing</th>
+                    <td>
+                        @Model.BillingPciExecuteAtual<br />
+                        @Model.BillingPciSecurityAtual
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Interaction</th>
+                    <td>
+                        @Model.InteractionPciExecuteAtual<br />
+                        @Model.InteractionPciSecurityAtual
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Order</th>
+                    <td>
+                        @Model.OrderPciExecuteAtual<br />
+                        @Model.OrderPciSecurityAtual
+                    </td>
+                </tr>
+
+            }
+            @if (Model.ServidorSystemId != "ICARE" && Model.ServidorSystemId != null)
+            {
+                <tr>
+                    <th scope="row">SimpleProposal</th>
+                    <td>
+                        @Model.SimpleProposalPciExecuteAtual<br />
+                        @Model.SimpleProposalPciJSPathAtual
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+

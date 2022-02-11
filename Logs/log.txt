@@ -1,0 +1,160 @@
+﻿..Arquivo de Logs do Sistema..
+
+
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 11/02/2022 17:53:27 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerBillingUI
+----------------------------------------
+
+Log Entry : 11/02/2022 17:53:27 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareOrderManagementUI
+----------------------------------------
+
+Log Entry : 11/02/2022 17:53:27 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerInteractionUI
+----------------------------------------
+
+Log Entry : 
+Log Entry : 11/02/2022 17:53:44 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerBillingUI
+----------------------------------------
+
+Log Entry : 11/02/2022 17:53:45 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareOrderManagementUI
+----------------------------------------
+
+Log Entry : 11/02/2022 17:53:45 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerInteractionUI
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 11/02/2022 18:07:22 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEVS1\SimpleProposal
+----------------------------------------
+
+Log Entry : 
+Log Entry : 11/02/2022 18:07:35 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - 
+----------------------------------------
+
+Log Entry : 11/02/2022 18:07:35 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareOrderManagementUI
+----------------------------------------
+
+Log Entry : 11/02/2022 18:07:35 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerInteractionUI
+----------------------------------------
+
+Log Entry : 
+Log Entry : 11/02/2022 18:07:43 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - 
+----------------------------------------
+
+Log Entry : 11/02/2022 18:07:43 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareOrderManagementUI
+----------------------------------------
+
+Log Entry : 11/02/2022 18:07:43 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerInteractionUI
+----------------------------------------
+
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 11/02/2022 18:14:02 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - 
+----------------------------------------
+
+Log Entry : 11/02/2022 18:14:02 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareOrderManagementUI
+----------------------------------------
+
+Log Entry : 11/02/2022 18:14:02 - HOME-01\carlo - carlo - HOME-01\carlo -  -  -  -  - Diretorio inexistente --> C:\Servidores\DEV1\ICareCustomerInteractionUI
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : System.Exception[]
+----------------------------------------
+
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
+Log Entry : 
